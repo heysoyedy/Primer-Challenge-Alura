@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale =1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+    <!-- CSS only -->
+
+
+    <title>Challenge 1</title>
+</head>
+
+<body>
+
+    <div class="container-todo">
+
+        <div class="logo-alura"></div>
+        <img src="img/Vectoralura logo.png" alt="">
+
+        <div class="container-izquierdo">
+            <input id="inputtextizq" class="input-texto" cols="30" rows="10 " placeholder="Ingrese el texto aquí">
+            <!-- placeholder es el mensaje que pongo de default  -->
+        </div>
+
+        <div class="container-derecho">
+            <img src="img/Muñeco.png" alt="" id="imgdere">
+
+            <h1 align="center" id="text1-conta" class="text1-container">Ningún mensaje fue encontrado</h1>
+            <textarea align="center" name="name" id="text2-conta" class="text2-container" cols="30"
+                rows="10">   "Ingrese el texto en la parte superior izquierda"</textarea>
+            <button type="button" id="btn-copiar">Copiar</button>
+        </div>
+
+
+        <div class="button-izquierdo">
+            <p style="color: #949ba3;"> 🛈 Solo letras minúsculas y sin acentos</p>
+            <button style="color:white;" type="button" class="" id="btn-encriptar"
+                onclick="encriptar()">Encriptar</button>
+
+            <button style="color: #0A3871" type="button" class="b-desencriptar" id="btn-desencriptar"
+                onclick="desencriptar()">Desencriptar</button>
+            <button type="button" class="b-copiar" id="btn-copiar" onclick="copy()">Copiar</button>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-center">
+                        <p>Challenge creado por <a href="https://www.aluracursos.com/" target="__blank">Alura</a>,
+                            diseñado por
+                            Edinson Collahuazo owo </p>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+    </div>
+
+    <script src="javascript.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetAlert.js"> </script>
+
+</body>
+
+</html>
